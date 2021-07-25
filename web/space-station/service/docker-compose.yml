@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+    space-station:
+        build: ./src/
+        container_name: space-station
+        volumes:
+            - ./src/:/var/www/html/
+        ports:
+            - "55047:80"
+        stdin_open: true
+        tty: true
+        restart: always

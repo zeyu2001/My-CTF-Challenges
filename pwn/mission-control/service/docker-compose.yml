@@ -1,0 +1,9 @@
+services:
+  mission-control:
+    build: ./src
+    container_name: mission-control
+    ports:
+      - "55021:5000"
+    restart: always
+    command: ./mission_control
+    read_only: true

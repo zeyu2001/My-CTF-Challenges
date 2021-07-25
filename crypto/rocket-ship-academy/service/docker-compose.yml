@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  rocket-ship-academy:
+    build: ./src
+    container_name: rocket-ship-academy
+    ports:
+      - "55002:5000"
+    restart: always
+    command: python rocket_ship_academy.py

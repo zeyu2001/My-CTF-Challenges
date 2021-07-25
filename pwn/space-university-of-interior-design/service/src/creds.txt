@@ -1,0 +1,5 @@
+In case I forget my credentials.
+
+jared:iamrich
+
+Thanks to my awesome sysadmin, no one else can see this file!

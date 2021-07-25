@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  rocket-science:
+    build: ./src
+    container_name: rocket-science
+    ports:
+      - "55020:5000"
+    restart: always
+    command: python rocket_science.py

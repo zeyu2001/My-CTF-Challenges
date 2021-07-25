@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+    starcereal_mysql_1:
+        image: mysql
+        container_name: starcereal_mysql_1
+        ports:
+          - "55044:3306"
+        volumes:
+            - .docker/setup.sql:/docker-entrypoint-initdb.d/setup.sql
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_ROOT_PASSWORD: a071f1a29ff5974b34e7b5db828633b41d8e3138bee37c64ed79c6e97a6d6009
+            MYSQL_DATABASE: starcereal
+        restart: always
+
+    starcereal_php_1:
+        build: ./php/
+        container_name: starcereal_php_1
+        depends_on:
+            - starcereal_mysql_1
+        volumes:
+            - ./php/:/var/www/html/
+        ports:
+            - "55043:80"
+        environment:
+            - MYSQL_USER=web
+            - MYSQL_PASS=e3d5004f6d8fbd9ace33add1fcdb61a67e0ada23b7559396d2fd2af88d53a84b
+            - MYSQL_DATABASE=starcereal
+        stdin_open: true
+        tty: true
+        restart: always

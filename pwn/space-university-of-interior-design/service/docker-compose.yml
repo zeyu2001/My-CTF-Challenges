@@ -1,0 +1,9 @@
+services:
+  space-university-of-interior-design:
+    build: ./src
+    container_name: suid
+    ports:
+      - "55022:5000"
+    restart: always
+    command: /bin/bash 
+    read_only: true
