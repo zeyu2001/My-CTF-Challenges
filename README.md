@@ -13,3 +13,4 @@ Challenges I wrote for various CTF competitions
 ## STANDCON
 
 - [2021](./STANDCON-2021/)
+- [2022](./STANDCON-2022/)
