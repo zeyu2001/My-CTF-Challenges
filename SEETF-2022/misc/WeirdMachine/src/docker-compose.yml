@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - 5000:5000
+    environment:
+      - FLAG=SEE{und3r6r4d_4dm15510n5_4r3_cr4zy_7fc37a510e35d46075f70325295f4526}
+      - PYTHONUNBUFFERED=1

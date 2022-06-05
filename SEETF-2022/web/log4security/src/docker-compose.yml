@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - 80:8000
+    environment:
+      - SUPER_SECRET=594a99ec60bf15850b6902082753c332d7202195
+      - FLAG=SEE{my_f1r57_j4v4_4ppl1c4710n_cd6840f49d28ae36fde53fed813fa2e1d3ba5783}

@@ -1,0 +1,22 @@
+version: "3"
+services:
+  proxy:
+    build: ./proxy
+    restart: always
+    ports:
+        - 8000:8080
+    links:
+      - "flagportal:flagportal.flagportal.svc.cluster.local"
+      - "backend:backend.flagportal.svc.cluster.local"
+  flagportal:
+    build: ./flagportal
+    restart: always
+    environment:
+      - ADMIN_KEY=spendable-snoring-character-ditzy-sepia-lazily
+      - FIRST_FLAG=SEE{n0w_g0_s0lv3_th3_n3xt_p4rt_bf38678e8a1749802b381aa0d36889e8}
+  backend:
+    build: ./backend
+    restart: always
+    environment:
+      - ADMIN_KEY=spendable-snoring-character-ditzy-sepia-lazily
+      - SECOND_FLAG=SEE{y4y_r3qu3st_smuggl1ng_1s_fun_e28557a604fb011a89546a7fdb743fe9}

@@ -1,0 +1,25 @@
+version: "3"
+services:
+  proxy:
+    build: ./proxy
+    restart: always
+    image: gcr.io/seetf-348313/flagportal-revenge/proxy
+    ports:
+        - 8000:8080
+    links:
+      - "flagportal:flagportal.flagportal.svc.cluster.local"
+      - "backend:backend.flagportal.svc.cluster.local"
+  flagportal:
+    build: ./flagportal
+    restart: always
+    image: gcr.io/seetf-348313/flagportal-revenge/flagportal
+    environment:
+      - ADMIN_KEY=unchain-outskirts-scalping
+      - FIRST_FLAG=SEE{h0p3fully_1_h4v3_f1x3d_th3_un1nt3nd3d_s0lut10ns_e0ccd5b53a82ca67cd060dceb01636b3}
+  backend:
+    build: ./backend
+    restart: always
+    image: gcr.io/seetf-348313/flagportal-revenge/backend
+    environment:
+      - ADMIN_KEY=unchain-outskirts-scalping
+      - SECOND_FLAG=SEE{th1s_1s_th3_s3c0nd_fl4g_f3ddb407f901e5c7b7b9a3eac7c0ace0}

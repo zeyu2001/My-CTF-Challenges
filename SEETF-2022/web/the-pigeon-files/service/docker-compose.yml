@@ -1,0 +1,15 @@
+version: "3"
+services:
+  app:
+    build: ./app
+    ports:
+      - 10006:80
+
+  admin:
+    build: ./admin
+    privileged: true
+    ports:
+      - 10007:8000
+    environment:
+      - FLAG=SEE{w4k3_up_5h33pl3_1t's_obv10us}
+      - UUID=514e8620-dd8b-4acc-af33-c55064995351

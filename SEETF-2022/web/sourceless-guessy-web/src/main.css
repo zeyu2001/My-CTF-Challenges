@@ -1,0 +1,374 @@
+html {
+    font-family: helvetica;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+  }
+  div {
+      display: inline-block;
+  }
+  .lazarus-pit {
+    white-space:nowrap;
+      text-align: center;
+      margin-top: 10%;
+      display: block;
+  }
+  .penguin {
+      color:#fcfcfc;
+  }
+  .vicki-vale {
+      color:#dbdada;
+  }
+  .cash {
+      color:#cecccc;
+  }
+  .superman {
+      color:#bfbcbc;
+  }
+  .manhunter {
+      color:#bfbdbd;
+  }
+  .hawkman {
+      color:#bebbbb;
+  }
+  .lantern {
+      color:#bab7b7;
+  }
+  .arrow {
+      color:#e3e2e2;
+  }
+  .grange {
+      color:#ffffff;
+  }
+  .flash {
+      color:#e8e7e7;
+  }
+  .marion {
+      color:#b8b5b5;
+  }
+  .zucco {
+      color:#b6b4b4;
+  }
+  .tony {
+      color:#b7b4b4;
+  }
+  .maxie {
+      color:#b6b4b3;
+  }
+  .zeus {
+      color:#c9c7c7;
+  }
+  .wrath {
+      color:#d6d3d3;
+  }
+  .ventriloquist {
+      color:#f9f8f8;
+  }
+  .toyman {
+      color:#e2e1e1;
+  }
+  .toymaker {
+      color:#a3a0a0;
+  }
+  .rupert {
+      color:#726e6e;
+  }
+  .thorne {
+      color:#423d3d;
+  }
+  .terrible {
+      color:#150f0f;
+  }
+  .trio {
+      color:#060000;
+  }
+  .temblor {
+      color:#393333;
+  }
+  .hugo {
+      color:#f0f0f0;
+  }
+  .strange {
+      color:#f6f5f5;
+  }
+  .spellbinder {
+      color:#f4f4f4;
+  }
+  .solomon {
+      color:#433e3e;
+  }
+  .grundy {
+      color:#332d2d;
+  }
+  .smoke {
+      color:#635f5f;
+  }
+  .sinestro {
+      color:#989595;
+  }
+  .shadow {
+      color:#c6c4c4;
+  }
+  .thief {
+      color:#e4e3e3;
+  }
+  .scorn {
+      color:#f9f9f9;
+  }
+  .bat-one {
+      color:#e9e9e9;
+  }
+  .rumor {
+      color:#615c5c;
+  }
+  .bat-two {
+      color:#161010;
+  }
+  .bat-three {
+      color:#514b4b;
+  }
+  .bat-four {
+      color:#cdcbcb;
+  }
+  .bat-five {
+      color:#f0efef;
+  }
+  .bat-six {
+      color:#fbfbfb;
+  }
+  .riddler {
+      color:#fefefe;
+  }
+  .bat-seven {
+      color:#2a2424;
+  }
+  .rumor {
+      color:#615c5c;
+  }
+  .bat-eight {
+      color:#706c6c;
+  }
+  .bat-nine {
+      color:#5d5959;
+  }
+  .riddlemen {
+      color:#262020;
+  }
+  .bat-ten {
+      color:#c4c1c1;
+  }
+  .rhino {
+      color:#fdfdfd;
+  }
+  .bat-eleven {
+      color:#fafafa;
+  }
+  .bat-twelve {
+      color:#f1f0f0;
+  }
+  .bat-thirteen {
+      color:#dcdbdb;
+  }
+  .bat-fourteen {
+      color:#0e0808;
+  }
+  .bat-fifteen {
+      color:#423c3c;
+  }
+  .bat-sixteen {
+      color:#949191;
+  }
+  .bat-seventeen {
+      color:#dbd9d9;
+  }
+  .mugsy {
+      color:#767272;
+  }
+  .bat-eighteen {
+      color:#0f0909;
+  }
+  .ragdoll {
+      color:#120c0c;
+  }
+  .bat-nineteen {
+      color:#494444;
+  }
+  .bat-twenty {
+      color:#5c5757;
+  }
+  .bat-twentyone {
+      color:#6a6666;
+  }
+  .bat-twentytwo {
+      color:#d3d1d1;
+  }
+  .bat-twentythree {
+      color:#aca8a8;
+  }
+  .bat-twenty-four {
+      color:#0a0303;
+  }
+  .bat-twentyfive {
+      color:#251f1f;
+  }
+  .bat-twentysix {
+      color:#5d5858;
+  }
+  .punch {
+      color:#080101;
+  }
+  .judy {
+      color:#cecbcb;
+  }
+  .prank {
+      color:#858080;
+  }
+  .poison-ivy {
+    color: #858080;
+  }
+  .mercy-graves {
+    color: #0d0707;
+  }
+  .mister-freeze {
+      color:#a3a09f;
+  }
+  .mirror-master {
+      color:#736f6f;
+  }
+  .mettalo {
+      color:#747171;
+  }
+  .marty {
+      color:#6f6b6b;
+  }
+  .man-bat {
+      color:#696464;
+  }
+  .lex-luthor {
+      color:#5e5a5a;
+  }
+  .killer-moth {
+      color:#585454;
+  }
+  .killer-croc {
+      color:#4e4949;
+  }
+  .hideto-katsu {
+      color:#413c3c;
+  }
+  .kabuki-twins {
+      color:#332e2e;
+  }
+  .joker-v2 {
+      color:#231d1d;
+  }
+  .the-joining {
+      color:#0d0707;
+  }
+  .harley-quinn {
+      color:#080202;
+  }
+  .francis-grey {
+      color:#0b0505;
+  }
+  .gearhead {
+      color:#383232;
+  }
+  .firefly {
+      color:#464141;
+  }
+  .everywhere-man {
+      color:#524d4d;
+  }
+  .dracula {
+      color:#656161;
+  }
+  .dave {
+      color:#6b6767;
+  }
+  .count-vertigo {
+      color:#716d6d;
+  }
+  .cluemaster {
+      color:#787373;
+  }
+  .clayface {
+      color:#edecec;
+  }
+  .catwoman {
+      color:#bcbaba;
+  }
+  .blaze {
+      color:#9d9b9b;
+  }
+  .black-mask {
+      color:#797575;
+  }
+  .alfred {
+      color:#504b4b;
+  }
+  .ellen-yin {
+      color:#2c2626;
+  }
+  .chief-angel {
+      color:#130d0d;
+  }
+  .nightwish {
+      color:#090303;
+  }
+  .dick-grayson {
+      color:#221c1c;
+  }
+  .robin {
+      color:#b9b6b6;
+  }
+  .james-gordon {
+      color:#eeecec;
+  }
+  .barbara-gordon {
+      color:#fefdfd;
+  }
+  .batgirl {
+      color:#f3f2f2;
+  }
+  .bat-30 {
+      color:#a5a2a2;
+  }
+  .bat-31 {
+      color:#5f5a5a;
+  }
+  .bat-32 {
+      color:#2b2525;
+  }
+  .bat-33 {
+      color:#c1bfbf;
+  }
+  .bat-34 {
+      color:#e8e6e6;
+  }
+  .bat-35 {
+      color:#eeeded;
+  }
+  .bat-36 {
+      color:#9d9a9a;
+  }
+  .bat-37 {
+      color:#070101;
+  }
+  .bat-38 {
+      color:#afacac;
+  }
+  .bat-39 {
+      color:#8a8585;
+  }
+  .bat-40 {
+      color:#100909;
+  }
+  .bat-41 {
+      color:#6c6767;
+  }
+  .bat-42 {
+      color: #F4F1F1;
+  }

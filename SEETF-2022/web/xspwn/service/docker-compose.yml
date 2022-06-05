@@ -1,0 +1,14 @@
+version: "3"
+services:
+  app:
+    build: ./app
+    ports:
+      - 10012:80
+    environment:
+      - FLAG=SEE{cr055_5173_pwn1n6_9025c9906ef358308ded2ba969bac375}
+
+  admin:
+    build: ./admin
+    privileged: true
+    ports:
+      - 10013:8000

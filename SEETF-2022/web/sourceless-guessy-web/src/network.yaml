@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: ctf-network-policy
+  namespace: sourcelessguessyweb
+spec:
+  podSelector: {}
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - {}
+  egress:
+    - to:
+      - ipBlock:
+          # allow all IPs
+          cidr: 0.0.0.0/0
+          except:
+            # except the private IP ranges: https://en.wikipedia.org/wiki/Private_network
+            - 10.0.0.0/8
+            - 172.16.0.0/12
+            - 192.168.0.0/16
+      - namespaceSelector:
+          matchLabels:
+            name: sourcelessguessyweb
+    - to:
+      # allow DNS
+      - namespaceSelector: {}
+        podSelector:
+          matchLabels:
+            k8s-app: kube-dns
+      ports:
+      - protocol: UDP
+        port: 53
