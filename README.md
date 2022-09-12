@@ -8,6 +8,8 @@ Challenges I wrote for various CTF competitions
 
 ## The InfoSecurity Challenge
 
+- [2022](./TISC-2022/)
+
 ## Cyber League
 
 - [Major 1](./Cyber-League-M1/)
