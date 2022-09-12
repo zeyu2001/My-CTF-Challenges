@@ -1,0 +1,20 @@
+extends base.pug
+
+block append content
+    h1 Login
+    
+    #status.alert.alert-primary(role='alert') Status will be shown here after submission
+    
+    form#form    
+        .form-group.row.my-2
+            label.col-sm-2.col-form-label(for='email') Email
+            .col-sm-10
+                input#url.form-control(type='email' name='email')
+        .form-group.row.my-2
+            label.col-sm-2.col-form-label(for='password') Password
+            .col-sm-10
+                input#url.form-control(type='text' name='password')
+        button(type='submit' class="btn btn-primary" value='Login') Login
+
+    
+    script(src='/static/login.js')

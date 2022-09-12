@@ -6,6 +6,8 @@ Challenges I wrote for various CTF competitions
 
 - [2022](./SEETF-2022/)
 
+## The InfoSecurity Challenge
+
 ## Cyber League
 
 - [Major 1](./Cyber-League-M1/)

@@ -1,0 +1,12 @@
+extends base.pug
+
+block append content
+    h1 PALINDROME Portal
+
+    h2 Live Attack Map
+
+    #map-container.container.citymap
+
+    script(src='/static/echarts.min.js')
+    script(src='/static/singapore.js')
+    script(src='/static/map.js')

@@ -1,0 +1,31 @@
+version: "3"
+services:
+  app:
+    build: ./app
+    privileged: true
+    restart: always
+    environment:
+      - MYSQL_PASSWORD=REDACTED                   # NOT THE REAL PASSWORD
+      - ADMIN_TOKEN=TISC{0:1:2:3:4:5:6:6:8:9}     # NOT THE REAL FLAG
+      - EMAIL=REDACTED@REDACTED                   # NOT THE REAL EMAIL
+      - PASSWORD=REDACTED                         # NOT THE REAL PASSWORD
+      - BASE_URL=http://localhost:8000
+
+  proxy:
+    build: ./proxy
+    restart: always
+    ports:
+      - 80:8080
+
+  db:
+    image: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=REDACTED              # NOT THE REAL PASSWORD
+      - MYSQL_DATABASE=palindrome
+    volumes:
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    
+  redis:
+    image: redis
+    restart: always

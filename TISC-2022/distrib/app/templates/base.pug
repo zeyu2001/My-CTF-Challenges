@@ -1,0 +1,30 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width')
+  
+  title PALINDROME Portal
+  
+  link(href='/static/bootstrap.min.css' rel='stylesheet' type="text/css")
+  script(defer src='/static/bootstrap.bundle.min.js')
+  
+  link(href='/static/main.css' rel='stylesheet')
+  script(defer src='/static/particles.min.js')
+  script(defer src='/static/main.js')
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse
+    ul.navbar-nav.ms-auto.me-auto.mb-2.mb-lg-0
+      li.nav-item.active
+        a.nav-link(href='/index') Home
+      li.nav-item
+        a.nav-link(href='/token') Get Token
+      li.nav-item
+        a.nav-link(href='/verify') Verify Token
+      li.nav-item
+        a.nav-link(href='/report-issue') Report an Issue
+
+#app.container.my-5
+  block content

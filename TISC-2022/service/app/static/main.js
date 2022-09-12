@@ -1,0 +1,1 @@
+particlesJS.load('app', '/static/particles.json');

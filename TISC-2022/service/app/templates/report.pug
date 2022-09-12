@@ -1,0 +1,17 @@
+extends base.pug
+
+block append content
+    h1 Report Issue to Site Admin
+    p Submit a URL for the admin to check.
+    
+    #status.alert.alert-primary(role='alert') Status will be shown here after submission
+
+    form#form    
+        .form-group.row
+            label.col-sm-2.col-form-label(for='url') URL
+            .col-sm-8
+                input#url.form-control(type='url' placeholder='http://example.com' name='url')
+            .col-sm-2
+                button(type='submit' class="btn btn-primary" value='Report') Report
+    
+    script(src='/static/report.js')

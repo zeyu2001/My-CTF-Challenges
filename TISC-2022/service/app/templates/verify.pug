@@ -1,0 +1,20 @@
+extends base.pug
+
+block append content
+    h1 PALINDROME Access Token Verification 
+
+    if error 
+        .alert.alert-danger(role='alert')
+            | #{error}
+    
+    else if username
+        .alert.alert-success(role='alert')
+            | This token belongs to !{username}.
+            | If !{username} asks for your token, you can give them this token: #{token}.
+    
+    form(action='/verify', method='get')
+        .form-group.row
+            label(for='token' class="col-sm-2 col-form-label") Token
+            .col-sm-10
+                input(type='text' class="form-control" name='token' placeholder='Token')
+        button(type='submit' class="btn btn-primary my-3" value='Verify') Verify

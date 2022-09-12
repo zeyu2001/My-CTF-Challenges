@@ -1,0 +1,21 @@
+extends base.pug
+
+block append content
+    h1 PALINDROME Access Tokens
+    p
+    | To ensure secure communication between our agents, you will be asked to identify yourself with access tokens.
+
+    if token
+        p Welcome back, #{username}!</p>
+        p Your token is #{token}</p>
+    else
+        p Generate a token below.
+        #status.alert.alert-primary(role='alert') Status will be shown here after submission
+        form
+            .form-group.row
+                label(for='username' class="col-sm-2 col-form-label") Username
+                .col-sm-10
+                    input(type='text' class="form-control" name='username' placeholder='Username')
+            button(type='submit' class="btn btn-primary my-3" value='Generate Token') Generate Token
+
+        script(src='/static/token.js')
