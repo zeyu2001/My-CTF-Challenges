@@ -154,7 +154,7 @@ Content-Type: application/json
 
 ```
 
-herefore, the `POST /do-report HTTP/1.1` request is processed as a second request instead.
+Therefore, the `POST /do-report HTTP/1.1` request is processed as a second request instead.
 
 This allows us to smuggle a request to the backend application, bypassing the access control implemented on ATS.
 
