@@ -4,6 +4,7 @@ Challenges I wrote for various CTF competitions
 
 ## SEETF
 
+- [2023](./SEETF-2023/)
 - [2022](./SEETF-2022/)
 
 ## The InfoSecurity Challenge
