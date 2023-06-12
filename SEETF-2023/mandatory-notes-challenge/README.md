@@ -24,7 +24,7 @@ Hard
 
 **Tested on Chrome Version 110.0.5481.77 (Official Build) (x86_64)**
 
-Abusing Chrome's behavior when dealing with long URLs combined with URI fragments persisting across server redirects. I found this technique as an [unintended solution to `secrets` from HackTM CTF 2023](https://ctf.zeyu2001.com/2023/hacktm-ctf-qualifiers/secrets).
+Abusing Chrome's behavior when dealing with long URLs combined with URI fragments persisting across server redirects. I found this technique as an [unintended solution to `secrets` from HackTM CTF 2023](https://ctf.zeyu2001.com/2023/hacktm-ctf-qualifiers/secrets) and [added](https://github.com/xsleaks/wiki/pull/147) it to the XSLeaks Wiki.
 
 If the note is found, the user is redirected to `?found=1#<base64 encoded JSON array of note IDs>`, otherwise they are redirected to `?found=0`.
 
