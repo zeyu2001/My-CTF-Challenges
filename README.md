@@ -2,6 +2,10 @@
 
 Challenges I wrote for various CTF competitions
 
+## Asian Cyber Security Challenge (ICC Qualifier)
+
+- [2024](./ACSC-2024/)
+
 ## SEETF
 
 - [2023](./SEETF-2023/)

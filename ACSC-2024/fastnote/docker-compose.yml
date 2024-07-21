@@ -1,0 +1,18 @@
+version: "3"
+services:
+  chall:
+    build: ./app
+    ports:
+      - 80:80
+    environment:
+      - FLAG=ACSC{j01n_th3_cult_0f_w3b4ss3mbly}
+      - SECRET=rift-video-swimmable
+
+  admin:
+    build: ./admin
+    privileged: true
+    environment:
+      - SECRET=rift-video-swimmable
+      - DOMAIN=chall
+    ports:
+      - 8000:8000

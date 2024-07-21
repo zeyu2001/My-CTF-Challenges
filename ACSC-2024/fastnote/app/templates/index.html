@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FastNote</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <script defer src="/static/sweetalert2.js"></script>
+  <script defer src="/static/module.js"></script>
+  <script defer src="/static/main.js"></script>
+</head>
+
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>FastNote</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#mynotes">My Notes</a></li>
+      <li><a href="#addnote">Add Note</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <section id="mynotes">
+      <h2>Your Notes</h2>
+      <p>Share your notes using <a id="share-url" href="">this URL</a>.</p>
+      <div id="notes">
+        You don't have any notes yet. Add one!
+      </div>
+    </section>
+    <section id="addnote">
+      <h2>Add Note</h2>
+      <form id="add-note">
+        <label for="title">Title</label>
+        <input id="title" type="text" name="title" placeholder="What is the meaning of life, the universe, and everything?" required>
+        
+        <label for="content">Content</label>
+        <textarea id="content" name="content" placeholder="42." required></textarea>
+
+        <button type="submit">Add Note</button>
+      </form>
+    </section>
+  </main>
+</body>
